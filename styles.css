@@ -19,7 +19,7 @@ body{
 }
 
 #navbar{
-    padding: 10px;
+    padding: 7px;
     padding-left: 50px;
     padding-right: 40px;
     display: flex;
@@ -77,7 +77,7 @@ body{
     outline: none;
     width: 100%;
     height: 25px;
-    border: dotted 1px #272727;
+    border: solid 1px var(--line);
     border-radius: 20px;
     padding-left: 40px;
 }
@@ -124,8 +124,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 20px;
     background-color: red;
     color: white;
@@ -154,13 +154,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     border-radius: 20px;
     background-color: red;
     color: white;
     position: absolute;
-    right: 118px;
+    right: 120px;
     top: 20px;
 
 }
@@ -299,6 +299,10 @@ body{
     border-radius: 80px;
 }
 
+.delete-div:hover{
+    background-color: rgba(255, 0, 0, 0.418);
+}
+
 .like-div{
     background-color: transparent;
     border: 1px solid var(--line);
@@ -325,7 +329,7 @@ body{
     margin-left: 5%;
     margin-right: 5%;
     margin-left: 5%;
-    margin-top: 3%;
+    margin-top: 2%;
     height: 1000px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -423,7 +427,7 @@ body{
     color: white;
     width: 35%;
     border: none;
-    background: linear-gradient(270deg,rgba(0,172,238,1) 0%,rgb(2, 102, 251) 100%);
+    background: linear-gradient(180deg,rgba(0,172,238,1) 0%,rgb(2, 102, 251) 100%);
 }
 
 .check{
@@ -455,3 +459,18 @@ body{
     margin-right: 5px;
     font-size: smaller;
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(68, 82, 99, 0.3);
+    margin: 3px;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: linear-gradient(180deg,#b421fe9d 0%,#1FD1F9 100%);
+}
+
