@@ -4,6 +4,7 @@
     --white: #eaf2ff;
     --grey: rgba(128, 128, 128, 0.548);
     --line: #2727272d;
+    --blue: rgba(128, 161, 231, 0.219);
 }
 
 body{
@@ -33,6 +34,19 @@ body{
     opacity: 80%;
 }
 
+.item-name,
+.leaf{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mint{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
 .left-navbar{
     cursor: pointer;
     color: black;
@@ -44,8 +58,8 @@ body{
 }
 
 .logo{
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
     object-fit: contain;
     object-position: top;
 }
@@ -62,8 +76,8 @@ body{
 .search{
     outline: none;
     width: 100%;
-    height: 30px;
-    border: dotted 1px var(--grey);
+    height: 25px;
+    border: dotted 1px #272727;
     border-radius: 20px;
     padding-left: 40px;
 }
@@ -94,8 +108,7 @@ body{
     color: white;
 }
 
-.fi-xtluxl-bell-thin,
-.fi-xtluxl-handbag-thin{
+.fi-xtluxl-bell-thin{
     font-size: 26px;
     cursor: pointer;
 }
@@ -122,8 +135,19 @@ body{
 
 }
 
+.profile,
+.notifications,
+.cart{
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
 .bag-div{
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bag{
@@ -254,7 +278,7 @@ body{
 
 .add-minus{
     cursor: pointer;
-    background-color: rgba(128, 161, 231, 0.219);
+    background-color: var(--blue);
     border: none;
     display: flex;
     align-items: center;
@@ -294,4 +318,140 @@ body{
     font-size: 16px;
 }
 
+#totals{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 3%;
+    height: 1000px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
 
+.totals-first{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 60%;
+    height: 100%;
+    background-color: var(--line);
+}
+
+.totals-second{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 40%;
+    height: 100%;
+    padding: 30px;
+}
+
+.second-first,
+.second-second{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.second-fourth{
+    border-top: solid 0.5px var(--line);
+}
+
+.order,
+.shipping,
+.vat,
+.total,
+.code{
+    color: var(--grey);
+}
+
+.count1,
+.code2{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.coupon{
+    outline: none;
+    border: 1px solid var(--line);
+    height: 30px;
+    width: 60%;
+    padding-left: 10px;
+}
+
+.apply{
+    font-family: "poppins";
+    cursor: pointer;
+    color: blue;
+    height: 32px;
+    width: 35%;
+    border: none;
+    background: linear-gradient(270deg,rgba(0, 171, 238, 0.445) 0%,rgba(2, 102, 251, 0.39) 100%);
+}
+
+.third-first,
+.third-second,
+.third-third,
+.third-fourth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkout{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "poppins";
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background: linear-gradient(270deg,rgba(0,172,238,1) 0%,rgb(2, 102, 251) 100%);
+}
+
+.count11{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "poppins";
+    cursor: pointer;
+    color: white;
+    width: 35%;
+    border: none;
+    background: linear-gradient(270deg,rgba(0,172,238,1) 0%,rgb(2, 102, 251) 100%);
+}
+
+.check{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-right: 5px;
+    font-size: smaller;   
+}
+
+.verified{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "poppins";
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: green;
+    margin-top: 15px;
+}
+
+.verify{
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    margin-right: 5px;
+    font-size: smaller;
+}
