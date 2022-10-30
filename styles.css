@@ -15,7 +15,6 @@ body{
     margin: 0;
     color: var(--black);
     background-color: var(--white);
-    height: 3000px;
 }
 
 #navbar{
@@ -231,6 +230,7 @@ body{
     flex: 2;
 }
 
+.forty-div,
 .forty{
     color: green;
 }
@@ -330,7 +330,7 @@ body{
     margin-right: 5%;
     margin-left: 5%;
     margin-top: 2%;
-    height: 1000px;
+    height: 700px;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -342,7 +342,7 @@ body{
     border-bottom-left-radius: 10px;
     width: 60%;
     height: 100%;
-    background-color: var(--line);
+    background-color: #1fd1f942;
 }
 
 .totals-second{
@@ -423,7 +423,6 @@ body{
     align-items: center;
     justify-content: center;
     font-family: "poppins";
-    cursor: pointer;
     color: white;
     width: 35%;
     border: none;
