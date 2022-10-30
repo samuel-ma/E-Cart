@@ -23,7 +23,11 @@ var x = function(){
 };
 
 var y = function(){
-    a--;
+    if(a >= 1){
+        a--
+    } else {
+        return 0;
+    }
     newNumber.innerText = a;
     forty.innerText = a * 45;
 };
@@ -41,11 +45,15 @@ var w = function(){
 };
 
 var z = function(){
-    b--;
+    if(b>=1){
+        b--
+    } else {
+        return 0;
+    }
+    
     newNumber2.innerText = b;
     forty2.innerText = b * 45;
 };
-
 add2.addEventListener("click", w);
 minus2.addEventListener("click", z);
 
