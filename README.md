@@ -30,4 +30,13 @@ An Ecommerce cart with pre-selected items
 
 ### SOME CODE SNIPPETS
 ```Javascript
+  //changing the color of the first item
+  let heart = document.getElementById('heart');
+  let index = 0;
+  const colors = ['red', 'grey'];
+
+  heart.addEventListener('click', function onClick() {
+    heart.style.color = colors[index];
+    index = index >= colors.length - 1 ? 0 : index + 1;
+  });
 ```
