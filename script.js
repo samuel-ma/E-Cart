@@ -237,7 +237,6 @@ for (let p = 0; p<deleteButtons.length; p++){
     button.addEventListener("click", function(event){
         var buttonClicked = event.target;
         buttonClicked.parentElement.parentElement.parentElement.remove();
-        updateCartTotal();
     })
 }
 
