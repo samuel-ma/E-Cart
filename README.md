@@ -13,16 +13,21 @@ An Ecommerce cart with pre-selected items
 
 ### TOOS USED
 <ul>
-  <li></li>
-  <li></li>
-  <li></li>
+  <li>Adobe XD</li>
+  <liVisual Studio Code></li>
+  <li>Codepen</li>
+  <li>hh</li>
 </ul>
 
 ### ICONS USED
 <ul>
-  <li>IconsFont(fav)</li>
+  <li>IconsFont (fav)</li>
   <li>Font Awesome</li>
   <li>Google Fonts</li>
   <li>Icons8</li>
   <li>Flavicon</li>
 </ul>
+
+### SOME CODE SNIPPETS
+```Javascript
+```
