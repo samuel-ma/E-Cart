@@ -322,6 +322,10 @@ body{
     font-size: 16px;
 }
 
+#heart3, #heart4, #heart5, #heart6{
+    color: grey;
+}
+
 #totals{
     display: flex;
     align-items: center;
