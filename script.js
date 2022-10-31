@@ -4,6 +4,7 @@ let add = document.querySelector(".add");
 let minus = document.querySelector(".minus");
 let newNumber = document.querySelector(".one");
 let forty = document.querySelector(".forty");
+let one = document.querySelector(".one");
 
 //the second element
 let add2 = document.querySelector(".add2");
@@ -41,13 +42,11 @@ let forty6 = document.querySelector(".forty6");
 //using a global function to store the amount from a single item
 //add and minus for the first element
 let a = 1;
-
 var x = function(){
     a++
     newNumber.innerText = a;
-    forty.innerText = a * 45;
+    let tot = forty.innerText = a * 45;
 };
-
 var y = function(){
     if(a >= 1){
         a--
@@ -63,13 +62,11 @@ minus.addEventListener("click", y);
 
 //add and minus for the second element
 let b = 1;
-
 var w = function(){
     b++
     newNumber2.innerText = b;
-    forty2.innerText = b * 45;
+    let tot2 = forty2.innerText = b * 45;
 };
-
 var z = function(){
     if(b>=1){
         b--
@@ -86,20 +83,17 @@ minus2.addEventListener("click", z);
 
 //add and minus for the third element
 let c = 1;
-
 var u = function(){
     c++
     newNumber3.innerText = c;
-    forty3.innerText = c * 45;
+    let tot3 = forty3.innerText = c * 45;
 };
-
 var v = function(){
     if(c>=1){
         c--
     } else {
         return 0;
     }
-    
     newNumber3.innerText = c;
     forty3.innerText = c * 45;
 };
@@ -110,20 +104,17 @@ minus3.addEventListener("click", v);
 
 //add and minus for the fourth element
 let d = 1;
-
 var s = function(){
     d++
     newNumber4.innerText = d;
-    forty4.innerText = d * 45;
+    let tot4 = forty4.innerText = d * 45;
 };
-
 var t = function(){
     if(d>=1){
         d--
     } else {
         return 0;
     }
-    
     newNumber4.innerText = d;
     forty4.innerText = d * 45;
 };
@@ -134,20 +125,17 @@ minus4.addEventListener("click", t);
 
 //add and minus for the fifth element
 let e = 1;
-
 var q = function(){
     e++
     newNumber5.innerText = e;
-    forty5.innerText = e * 45;
+    let tot5 = forty5.innerText = e * 45;
 };
-
 var r = function(){
     if(e>=1){
         e--
     } else {
         return 0;
     }
-    
     newNumber5.innerText = e;
     forty5.innerText = e * 45;
 };
@@ -158,20 +146,17 @@ minus5.addEventListener("click", r);
 
 //add and minus for the sixth element
 let f = 1;
-
 var q = function(){
     f++
     newNumber6.innerText = f;
-    forty6.innerText = f * 45;
+    let tot6 = forty6.innerText = f * 45;
 };
-
 var r = function(){
     if(f>=1){
         f--
     } else {
         return 0;
     }
-    
     newNumber6.innerText = f;
     forty6.innerText = f * 45;
 };
@@ -182,9 +167,6 @@ minus6.addEventListener("click", r);
 
 
 
-//the total element
-let total = document.querySelector(".count21");
-// total.innerText = w + x + y + z;
 
 
 
@@ -209,25 +191,89 @@ heart2.addEventListener('click', function onClick() {
   i = i >= colors2.length - 1 ? 0 : i + 1;
 });
 
+//changing the color of the second item
+let heart3 = document.getElementById('heart3');
+let i3 = 0;
+const colors3 = ['red', 'grey'];
+
+heart3.addEventListener('click', function onClick() {
+  heart3.style.color = colors3[i3];
+  i3 = i3 >= colors3.length - 1 ? 0 : i3 + 1;
+});
+
+//changing the color of the second item
+let heart4 = document.getElementById('heart4');
+let i4 = 0;
+const colors4 = ['red', 'grey'];
+
+heart4.addEventListener('click', function onClick() {
+  heart4.style.color = colors3[i4];
+  i4 = i4 >= colors4.length - 1 ? 0 : i4 + 1;
+});
+
+//changing the color of the second item
+let heart5 = document.getElementById('heart5');
+let i5 = 0;
+const colors5 = ['red', 'grey'];
+
+heart5.addEventListener('click', function onClick() {
+  heart5.style.color = colors5[i5];
+  i5 = i5 >= colors5.length - 1 ? 0 : i5 + 1;
+});
+
+//changing the color of the second item
+let heart6 = document.getElementById('heart6');
+let i6 = 0;
+const colors6 = ['red', 'grey'];
+
+heart6.addEventListener('click', function onClick() {
+  heart6.style.color = colors6[i6];
+  i6 = i6 >= colors6.length - 1 ? 0 : i6 + 1;
+});
+
+
+
 
 
 //working on deleting the whole item each time the delete button is clicked
-//deleting the first element on the list
-let deleteButton = document.querySelector(".delete-div");
-let items = document.querySelector(".item1");
+let deleteButtons = document.getElementsByClassName("delete-div");
+console.log(deleteButtons);
 
-deleteButton.addEventListener("click", function(){
-    items.remove(items);
-});
-
-
-//deleting the first element on the list
-let deleteButton2 = document.querySelector(".delete-div2");
-let items2 = document.querySelector(".item11");
-
-deleteButton2.addEventListener("click", function(){
-    items2.remove(items2);
-});
+for (let p = 0; p<deleteButtons.length; p++){
+    let button = deleteButtons[p];
+    button.addEventListener("click", function(event){
+        var buttonClicked = event.target;
+        buttonClicked.parentElement.parentElement.parentElement.remove();
+        updateCartTotal();
+    })
+}
 
 
-//add a pop up as soon as the item is deleted to return the deleted items
+
+
+
+
+//the total element
+let total = document.querySelector(".count21");
+let purchased = document.querySelector(".count9");
+let order = document.querySelector(".count2");
+let totalAmount = (purchased * order);
+total.innerText = totalAmount;
+
+function updateCartTotal(){
+
+    let items = document.getElementsByClassName("items")[0];
+    let item1 = items.getElementsByClassName("item1");
+    let total = 0;
+
+    for(let s=0; s<item1.length; s++){
+        let itemRow = item1[i];
+        let priceElement = itemRow.getElementsByClassName("forty")[0]
+        let quantityElement = itemRow.getElementsByClassName("one")[0];
+
+        total = total + (priceElement * quantityElement);
+    }
+    document.getElementsByClassName("count21")[0].innerText = total;
+}
+
+
