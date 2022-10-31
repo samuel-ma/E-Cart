@@ -80,7 +80,6 @@ var z = function(){
 add2.addEventListener("click", w);
 minus2.addEventListener("click", z);
 
-
 //add and minus for the third element
 let c = 1;
 var u = function(){
@@ -99,7 +98,6 @@ var v = function(){
 };
 add3.addEventListener("click", u);
 minus3.addEventListener("click", v);
-
 
 
 //add and minus for the fourth element
@@ -121,8 +119,6 @@ var t = function(){
 add4.addEventListener("click", s);
 minus4.addEventListener("click", t);
 
-
-
 //add and minus for the fifth element
 let e = 1;
 var q = function(){
@@ -142,8 +138,6 @@ var r = function(){
 add5.addEventListener("click", q);
 minus5.addEventListener("click", r);
 
-
-
 //add and minus for the sixth element
 let f = 1;
 var q = function(){
@@ -162,8 +156,6 @@ var r = function(){
 };
 add6.addEventListener("click", q);
 minus6.addEventListener("click", r);
-
-
 
 
 
@@ -235,9 +227,10 @@ heart6.addEventListener('click', function onClick() {
 
 
 
+
 //working on deleting the whole item each time the delete button is clicked
 let deleteButtons = document.getElementsByClassName("delete-div");
-console.log(deleteButtons);
+// console.log(deleteButtons);
 
 for (let p = 0; p<deleteButtons.length; p++){
     let button = deleteButtons[p];
@@ -259,21 +252,5 @@ let purchased = document.querySelector(".count9");
 let order = document.querySelector(".count2");
 let totalAmount = (purchased * order);
 total.innerText = totalAmount;
-
-function updateCartTotal(){
-
-    let items = document.getElementsByClassName("items")[0];
-    let item1 = items.getElementsByClassName("item1");
-    let total = 0;
-
-    for(let s=0; s<item1.length; s++){
-        let itemRow = item1[i];
-        let priceElement = itemRow.getElementsByClassName("forty")[0]
-        let quantityElement = itemRow.getElementsByClassName("one")[0];
-
-        total = total + (priceElement * quantityElement);
-    }
-    document.getElementsByClassName("count21")[0].innerText = total;
-}
 
 
