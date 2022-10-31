@@ -1,7 +1,7 @@
 # E-Cart🍀
 An Ecommerce cart with pre-selected items
 
-### VIEW LIVE SITE HERE
+### LIVE SITE
 ----> https://samuel-ma.github.io/E-Cart/
 
 ### LANGUAGES USED
