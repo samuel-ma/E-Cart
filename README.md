@@ -41,3 +41,5 @@ An Ecommerce cart with pre-selected items
     index = index >= colors.length - 1 ? 0 : index + 1;
   });
 ```
+
+<br>
