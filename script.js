@@ -247,8 +247,8 @@ for (let p = 0; p<deleteButtons.length; p++){
 
 //the total element
 let total = document.querySelector(".count21");
-let purchased = document.querySelector(".count9");
-let order = document.querySelector(".count2");
+let purchased = document.querySelector(".count9").innerText;
+let order = document.querySelector(".count2").innerText;
 let totalAmount = (purchased * order);
 total.innerText = totalAmount;
 
