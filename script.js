@@ -6,6 +6,13 @@ let newNumber = document.querySelector(".one");
 let forty = document.querySelector(".forty");
 let one = document.querySelector(".one");
 
+//the total element
+let total = document.querySelector(".count21");
+let purchased = document.querySelector(".count9").innerText;
+let order = document.querySelector(".count2").innerText;
+let totalAmount = (purchased * order);
+total.innerText = totalAmount;
+
 //the second element
 let add2 = document.querySelector(".add2");
 let minus2 = document.querySelector(".minus2");
@@ -44,16 +51,24 @@ let forty6 = document.querySelector(".forty6");
 let a = 1;
 var x = function(){
     a++
+    purchased=parseInt(purchased)+1
     newNumber.innerText = a;
+    let totalAmount = (purchased * order);
+total.innerText = totalAmount;
+    // console.log(newNumber);
     let tot = forty.innerText = a * 45;
 };
 var y = function(){
     if(a >= 1){
         a--
+        purchased=parseInt(purchased)-1
+        let totalAmount = (purchased * order);
+total.innerText = totalAmount;
     } else {
         return 0;
     }
     newNumber.innerText = a;
+    // console.log(newNumber);
     forty.innerText = a * 45;
 };
 
@@ -64,12 +79,18 @@ minus.addEventListener("click", y);
 let b = 1;
 var w = function(){
     b++
+    purchased=parseInt(purchased)+1
     newNumber2.innerText = b;
+    let totalAmount = (purchased * order);
+total.innerText = totalAmount;
     let tot2 = forty2.innerText = b * 45;
 };
 var z = function(){
     if(b>=1){
         b--
+        purchased=parseInt(purchased)-1
+        let totalAmount = (purchased * order);
+total.innerText = totalAmount;
     } else {
         return 0;
     }
@@ -83,13 +104,19 @@ minus2.addEventListener("click", z);
 //add and minus for the third element
 let c = 1;
 var u = function(){
+    purchased=parseInt(purchased)+1
     c++
     newNumber3.innerText = c;
+    let totalAmount = (purchased * order);
+total.innerText = totalAmount;
     let tot3 = forty3.innerText = c * 45;
 };
 var v = function(){
     if(c>=1){
         c--
+        purchased=parseInt(purchased)-1
+        let totalAmount = (purchased * order);
+total.innerText = totalAmount;
     } else {
         return 0;
     }
@@ -103,13 +130,19 @@ minus3.addEventListener("click", v);
 //add and minus for the fourth element
 let d = 1;
 var s = function(){
+    purchased=parseInt(purchased)+1
     d++
+    let totalAmount = (purchased * order);
+total.innerText = totalAmount;
     newNumber4.innerText = d;
     let tot4 = forty4.innerText = d * 45;
 };
 var t = function(){
     if(d>=1){
         d--
+        let totalAmount = (purchased * order);
+total.innerText = totalAmount;
+        purchased=parseInt(purchased)-1
     } else {
         return 0;
     }
@@ -123,12 +156,18 @@ minus4.addEventListener("click", t);
 let e = 1;
 var q = function(){
     e++
+    purchased=parseInt(purchased)+1
     newNumber5.innerText = e;
+    let totalAmount = (purchased * order);
+total.innerText = totalAmount;
     let tot5 = forty5.innerText = e * 45;
 };
 var r = function(){
     if(e>=1){
         e--
+        purchased=parseInt(purchased)-1
+        let totalAmount = (purchased * order);
+total.innerText = totalAmount;
     } else {
         return 0;
     }
@@ -141,13 +180,19 @@ minus5.addEventListener("click", r);
 //add and minus for the sixth element
 let f = 1;
 var q = function(){
+    purchased=parseInt(purchased)+1
     f++
+    let totalAmount = (purchased * order);
+total.innerText = totalAmount;
     newNumber6.innerText = f;
     let tot6 = forty6.innerText = f * 45;
 };
 var r = function(){
     if(f>=1){
+        purchased=parseInt(purchased)-1
         f--
+        let totalAmount = (purchased * order);
+total.innerText = totalAmount;
     } else {
         return 0;
     }
@@ -245,11 +290,8 @@ for (let p = 0; p<deleteButtons.length; p++){
 
 
 
-//the total element
-let total = document.querySelector(".count21");
-let purchased = document.querySelector(".count9").innerText;
-let order = document.querySelector(".count2").innerText;
-let totalAmount = (purchased * order);
-total.innerText = totalAmount;
+
+
+
 
 
