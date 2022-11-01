@@ -21,7 +21,7 @@ An Ecommerce cart with pre-selected items
 
 ### ICONS USED
 <ul>
-  <li>IconsFont (fav)</li>
+  <li>IconsFont⭐</li>
   <li>Friconix</li>
   <li>Font Awesome</li>
   <li>Google Fonts</li>
