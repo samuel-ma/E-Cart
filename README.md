@@ -43,7 +43,8 @@ An Ecommerce cart with pre-selected items
 ```
 
 <br>
-![ecart](https://user-images.githubusercontent.com/82509653/199307131-5af7487c-4b7c-43b0-a025-5e02f1b118ec.png)
 
+
+![ecart](https://user-images.githubusercontent.com/82509653/199307248-093b65dc-4b65-47b0-b413-2ccdaf4720fa.png)
 
 
