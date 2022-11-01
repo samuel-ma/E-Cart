@@ -41,9 +41,7 @@ An Ecommerce cart with pre-selected items
     index = index >= colors.length - 1 ? 0 : index + 1;
   });
 ```
-
 <br>
-
 
 ![ecart](https://user-images.githubusercontent.com/82509653/199307248-093b65dc-4b65-47b0-b413-2ccdaf4720fa.png)
 
