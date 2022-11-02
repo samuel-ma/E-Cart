@@ -2,7 +2,7 @@
 An Ecommerce cart with pre-selected items
 
 ## LIVE SITE
-----> cart-gilt.vercel.app
+----> https://cart-gilt.vercel.app
 
 ### LANGUAGES USED
 <ul>
