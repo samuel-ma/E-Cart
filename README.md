@@ -2,7 +2,7 @@
 An Ecommerce cart with pre-selected items
 
 ## LIVE SITE
-----> https://samuel-ma.github.io/E-Cart/
+----> cart-gilt.vercel.app
 
 ### LANGUAGES USED
 <ul>
