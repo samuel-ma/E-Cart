@@ -40,7 +40,7 @@ let forty5 = document.querySelector(".forty5");
 let forty5Value = forty5.innerHTML;
 Number(forty5Value);
 
-//the fifth element
+//the sith element
 let add6 = document.querySelector(".add6");
 let minus6 = document.querySelector(".minus6");
 let newNumber6 = document.querySelector(".one6");
@@ -55,7 +55,7 @@ let totalValue = total.innerHTML;
 let purchased = document.querySelector(".count9");
 let purchasedValue = purchased.innerHTML;
 
-let order = document.querySelector(".count1");
+let order = document.querySelector("#count1");
 let orderValue = order.innerHTML;
 
 
@@ -67,16 +67,13 @@ let a = 1;
 var x = function(){
     a++
     forty.innerText = a * 45;
-    purchasedValue = (a + b + c + d + e + f);
+    // purchasedValue = (a + b + c + d + e + f);
     // orderValue = `$(fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value)`;
-    orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
-    let testNum =  Number(orderValue);
-    console.log(typeof testNum);
-
-    console.log(a);
-    console.log(forty.innerHTML);
-    console.log(purchasedValue);
-    console.log(orderValue);
+    // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
+    // console.log(a);
+    // console.log(forty.innerHTML);
+    // console.log(purchasedValue);
+    // console.log(orderValue);
 
     newNumber.innerText = a;
 };
@@ -84,14 +81,12 @@ var y = function(){
     if(a >= 1){
         a--
         forty.innerText = a * 45;
-        purchasedValue = (a + b + c + d + e + f);
-        orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
-        orderValue.toNumber;
-
-        console.log(a);
-        console.log(forty.innerHTML);
-        console.log(purchasedValue);
-        console.log(orderValue);
+        // purchasedValue = (a + b + c + d + e + f);
+        // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
+        // console.log(a);
+        // console.log(forty.innerHTML);
+        // console.log(purchasedValue);
+        // console.log(orderValue);
 
 
     } else {
@@ -109,16 +104,16 @@ var w = function(){
     b++
     forty2.innerText = b * 45;
     newNumber2.innerText = b;
-    purchasedValue = (a + b + c + d + e + f);
-    orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
+    // purchasedValue = (a + b + c + d + e + f);
+    // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
 
 };
 var z = function(){
     if(b>=1){
         b--
         forty2.innerText = b * 45;
-        purchasedValue = (a + b + c + d + e + f);
-        orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);   
+        // purchasedValue = (a + b + c + d + e + f);
+        // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);   
         
     } else {
         return 0;
@@ -135,15 +130,15 @@ var u = function(){
     c++
     forty3.innerText = c * 45;
     newNumber3.innerText = c;
-    purchasedValue = (a + b + c + d + e + f);
-    orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
+    // purchasedValue = (a + b + c + d + e + f);
+    // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
 };
 var v = function(){
     if(c>=1){
         c--
         forty3.innerText = c * 45;
-        purchasedValue = (a + b + c + d + e + f);
-        orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
+        // purchasedValue = (a + b + c + d + e + f);
+        // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
     } else {
         return 0;
     }
@@ -158,16 +153,16 @@ let d = 1;
 var s = function(){
     d++
     forty4.innerText = d * 45;
-    purchasedValue = (a + b + c + d + e + f);
-    orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
+    // purchasedValue = (a + b + c + d + e + f);
+    // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
     newNumber4.innerText = d;
 };
 var t = function(){
     if(d>=1){
         d--
         forty4.innerText = d * 45;
-        purchasedValue = (a + b + c + d + e + f);
-        orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
+        // purchasedValue = (a + b + c + d + e + f);
+        // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
     } else {
         return 0;
     }
@@ -181,16 +176,16 @@ let e = 1;
 var q = function(){
     e++
     forty5.innerText = e * 45;
-    purchasedValue = (a + b + c + d + e + f);
-    orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
+    // purchasedValue = (a + b + c + d + e + f);
+    // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
     newNumber5.innerText = e;
 };
 var r = function(){
     if(e>=1){
         e--
         forty5.innerText = e * 45;
-        purchasedValue = (a + b + c + d + e + f);
-        orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
+        // purchasedValue = (a + b + c + d + e + f);
+        // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
     } else {
         return 0;
     }
@@ -204,16 +199,16 @@ let f = 1;
 var q = function(){
     f++
     forty6.innerText = f * 45;
-    purchasedValue = (a + b + c + d + e + f);
-    orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
+    // purchasedValue = (a + b + c + d + e + f);
+    // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
     newNumber6.innerText = f;
 };
 var r = function(){
     if(f>=1){
         f--
         forty6.innerText = f * 45;
-        purchasedValue = (a + b + c + d + e + f);
-        orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
+        // purchasedValue = (a + b + c + d + e + f);
+        // orderValue = (fortyValue + forty2Value + forty3Value + forty4Value + forty5Value + forty6Value);
     } else {
         return 0;
     }
@@ -313,4 +308,3 @@ for (let p = 0; p<deleteButtons.length; p++){
 //the total element
 let totalAmount = ((purchasedValue * orderValue) + 20);
 total.innerText = totalAmount;
-
